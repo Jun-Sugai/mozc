@@ -132,6 +132,12 @@
             'compiler_host': 'msvs',
             'compiler_host_version_int': 1800,  # Visual C++ 2013 or higher
           }],
+          ['MSVS_VERSION=="2015"', {
+            'compiler_target': 'msvs',
+            'compiler_target_version_int': 1900,  # Visual C++ 2015 or higher
+            'compiler_host': 'msvs',
+            'compiler_host_version_int': 1900,  # Visual C++ 2015 or higher
+          }],
         ],
       }],
       ['OS=="mac"', {
@@ -697,6 +703,7 @@
           '_ATL_CSTRING_EXPLICIT_CONSTRUCTORS',
           '_CRT_SECURE_NO_DEPRECATE',
           '_MIDL_USE_GUIDDEF_',
+          '_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS',
           '_STL_MSVC',
           '_UNICODE',
           '_WIN32',
